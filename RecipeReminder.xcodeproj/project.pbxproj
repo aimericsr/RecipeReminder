@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		A8131DB42845085700AA1173 /* RecipeReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DB32845085700AA1173 /* RecipeReminderApp.swift */; };
-		A8131DB62845085700AA1173 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DB52845085700AA1173 /* ContentView.swift */; };
+		A8131DB62845085700AA1173 /* RootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DB52845085700AA1173 /* RootApp.swift */; };
 		A8131DB82845085800AA1173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8131DB72845085800AA1173 /* Assets.xcassets */; };
 		A8131DBB2845085800AA1173 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8131DBA2845085800AA1173 /* Preview Assets.xcassets */; };
+		A8131DC328450B0C00AA1173 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC228450B0C00AA1173 /* SessionManager.swift */; };
+		A8131DC528450B5600AA1173 /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC428450B5600AA1173 /* LaunchScreenManager.swift */; };
+		A8131DC728450B7000AA1173 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC628450B7000AA1173 /* TabManager.swift */; };
+		A8131DC928450B8900AA1173 /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC828450B8900AA1173 /* SheetManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8131DB02845085700AA1173 /* RecipeReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8131DB32845085700AA1173 /* RecipeReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeReminderApp.swift; sourceTree = "<group>"; };
-		A8131DB52845085700AA1173 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8131DB52845085700AA1173 /* RootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootApp.swift; sourceTree = "<group>"; };
 		A8131DB72845085800AA1173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8131DBA2845085800AA1173 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8131DC228450B0C00AA1173 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A8131DC428450B5600AA1173 /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
+		A8131DC628450B7000AA1173 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
+		A8131DC828450B8900AA1173 /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		A8131DB22845085700AA1173 /* RecipeReminder */ = {
 			isa = PBXGroup;
 			children = (
+				A8131DC128450B0100AA1173 /* Managers */,
 				A8131DB32845085700AA1173 /* RecipeReminderApp.swift */,
-				A8131DB52845085700AA1173 /* ContentView.swift */,
+				A8131DB52845085700AA1173 /* RootApp.swift */,
 				A8131DB72845085800AA1173 /* Assets.xcassets */,
 				A8131DB92845085800AA1173 /* Preview Content */,
 			);
@@ -65,6 +74,17 @@
 				A8131DBA2845085800AA1173 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8131DC128450B0100AA1173 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A8131DC228450B0C00AA1173 /* SessionManager.swift */,
+				A8131DC428450B5600AA1173 /* LaunchScreenManager.swift */,
+				A8131DC628450B7000AA1173 /* TabManager.swift */,
+				A8131DC828450B8900AA1173 /* SheetManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8131DB62845085700AA1173 /* ContentView.swift in Sources */,
+				A8131DC728450B7000AA1173 /* TabManager.swift in Sources */,
+				A8131DC928450B8900AA1173 /* SheetManager.swift in Sources */,
+				A8131DB62845085700AA1173 /* RootApp.swift in Sources */,
 				A8131DB42845085700AA1173 /* RecipeReminderApp.swift in Sources */,
+				A8131DC528450B5600AA1173 /* LaunchScreenManager.swift in Sources */,
+				A8131DC328450B0C00AA1173 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
