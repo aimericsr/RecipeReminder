@@ -8,54 +8,57 @@
 import Foundation
 
 final class SessionManager: ObservableObject {
-    
+
     enum UserDefaultKeys {
         static let hasSeenOnboarding = "hasSeenOnboarding"
         static let hasCompletedSignUpFlow = "hasCompletedSignUpFlow"
+        static let isLogged = "isLogged"
     }
     
     enum CurrentState {
+        case onboarding
+        case register
         case loggedIn
         case loggedOut
-        case onboarding
-        case signup
     }
     
     @Published private(set) var currentState: CurrentState?
     
     func signIn() {
         currentState = .loggedIn
-    }
-    
-    func signOut() {
-        currentState = .loggedOut
-    }
-    
-    func register() {
-        signIn()
         UserDefaults.standard.set(true, forKey: UserDefaultKeys.hasCompletedSignUpFlow)
+        UserDefaults.standard.set(true, forKey: UserDefaultKeys.isLogged)
+    }
+    
+    func LogIn() {
+        currentState = .loggedIn
+        UserDefaults.standard.set(true, forKey: UserDefaultKeys.isLogged)
+    }
+    
+    func LogOut() {
+        currentState = .loggedOut
+        UserDefaults.standard.set(false, forKey: UserDefaultKeys.isLogged)
     }
     
     func completeOnboarding() {
-        currentState = .signup
+        currentState = .register
         UserDefaults.standard.set(true, forKey: UserDefaultKeys.hasSeenOnboarding)
     }
     
     func configureCurrentState() {
-        
-        /**
-         - User closes the app during the onboarding phase > Resume the app from the onboarding screens
-         - User closes the app during the sign up phase > Resume the app from the sign up screens
-         - User closes the app after viewing onboarding and sign up phase > Resume the app from the log in screen
-         */
-        
-        let hasCompletedSignUpFlow = UserDefaults.standard.bool(forKey: UserDefaultKeys.hasCompletedSignUpFlow)
         let hasCompletedOnboarding = UserDefaults.standard.bool(forKey: UserDefaultKeys.hasSeenOnboarding)
+        let hasCompletedSignUpFlow = UserDefaults.standard.bool(forKey: UserDefaultKeys.hasCompletedSignUpFlow)
+        let isLogged = UserDefaults.standard.bool(forKey: UserDefaultKeys.isLogged)
         
-        if hasCompletedSignUpFlow {
+        if !hasCompletedOnboarding {
+            currentState = .onboarding
+        } else if !hasCompletedSignUpFlow {
+            currentState = .register
+        } else if !isLogged {
             currentState = .loggedOut
         } else {
-            currentState = hasCompletedOnboarding ? .signup : .onboarding
+            currentState = .loggedIn
         }
+        
     }
 }

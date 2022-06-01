@@ -15,6 +15,17 @@
 		A8131DC528450B5600AA1173 /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC428450B5600AA1173 /* LaunchScreenManager.swift */; };
 		A8131DC728450B7000AA1173 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC628450B7000AA1173 /* TabManager.swift */; };
 		A8131DC928450B8900AA1173 /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DC828450B8900AA1173 /* SheetManager.swift */; };
+		A8131DCE28451A7E00AA1173 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DCD28451A7E00AA1173 /* HomeView.swift */; };
+		A8131DD028451B3600AA1173 /* RememberRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DCF28451B3600AA1173 /* RememberRecipe.swift */; };
+		A8131DD228451B7500AA1173 /* ShareRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DD128451B7500AA1173 /* ShareRecipe.swift */; };
+		A8131DD428451BA700AA1173 /* DiscoverRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DD328451BA700AA1173 /* DiscoverRecipe.swift */; };
+		A8131DD628451CE400AA1173 /* RootOnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DD528451CE400AA1173 /* RootOnBoarding.swift */; };
+		A8131DDB28451E8900AA1173 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DDA28451E8900AA1173 /* LoginView.swift */; };
+		A8131DDD28451EEF00AA1173 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8131DDC28451EEF00AA1173 /* RegisterView.swift */; };
+		A88395FE2847846D009FAC06 /* vm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88395FD2847846D009FAC06 /* vm.swift */; };
+		A883960028478481009FAC06 /* view1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88395FF28478481009FAC06 /* view1.swift */; };
+		A8839602284784A3009FAC06 /* view2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8839601284784A3009FAC06 /* view2.swift */; };
+		A8EC39D52845FE0B00D77895 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EC39D42845FE0B00D77895 /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +38,17 @@
 		A8131DC428450B5600AA1173 /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
 		A8131DC628450B7000AA1173 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
 		A8131DC828450B8900AA1173 /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
+		A8131DCD28451A7E00AA1173 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A8131DCF28451B3600AA1173 /* RememberRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberRecipe.swift; sourceTree = "<group>"; };
+		A8131DD128451B7500AA1173 /* ShareRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecipe.swift; sourceTree = "<group>"; };
+		A8131DD328451BA700AA1173 /* DiscoverRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRecipe.swift; sourceTree = "<group>"; };
+		A8131DD528451CE400AA1173 /* RootOnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootOnBoarding.swift; sourceTree = "<group>"; };
+		A8131DDA28451E8900AA1173 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A8131DDC28451EEF00AA1173 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A88395FD2847846D009FAC06 /* vm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vm.swift; sourceTree = "<group>"; };
+		A88395FF28478481009FAC06 /* view1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view1.swift; sourceTree = "<group>"; };
+		A8839601284784A3009FAC06 /* view2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view2.swift; sourceTree = "<group>"; };
+		A8EC39D42845FE0B00D77895 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +81,15 @@
 		A8131DB22845085700AA1173 /* RecipeReminder */ = {
 			isa = PBXGroup;
 			children = (
-				A8131DC128450B0100AA1173 /* Managers */,
+				A88395FC28478450009FAC06 /* stackoverflow */,
 				A8131DB32845085700AA1173 /* RecipeReminderApp.swift */,
 				A8131DB52845085700AA1173 /* RootApp.swift */,
+				A8EC39D32845FDEF00D77895 /* Extensions */,
+				A8131DCC28451A6200AA1173 /* Home */,
+				A8131DD928451E6200AA1173 /* Login */,
+				A8131DC128450B0100AA1173 /* Managers */,
+				A8131DCA28450DF600AA1173 /* OnBoarding */,
+				A8131DCB284519FE00AA1173 /* Register */,
 				A8131DB72845085800AA1173 /* Assets.xcassets */,
 				A8131DB92845085800AA1173 /* Preview Content */,
 			);
@@ -85,6 +113,59 @@
 				A8131DC828450B8900AA1173 /* SheetManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A8131DCA28450DF600AA1173 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				A8131DCF28451B3600AA1173 /* RememberRecipe.swift */,
+				A8131DD128451B7500AA1173 /* ShareRecipe.swift */,
+				A8131DD328451BA700AA1173 /* DiscoverRecipe.swift */,
+				A8131DD528451CE400AA1173 /* RootOnBoarding.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		A8131DCB284519FE00AA1173 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A8131DDC28451EEF00AA1173 /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A8131DCC28451A6200AA1173 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A8131DCD28451A7E00AA1173 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A8131DD928451E6200AA1173 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A8131DDA28451E8900AA1173 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A88395FC28478450009FAC06 /* stackoverflow */ = {
+			isa = PBXGroup;
+			children = (
+				A88395FD2847846D009FAC06 /* vm.swift */,
+				A88395FF28478481009FAC06 /* view1.swift */,
+				A8839601284784A3009FAC06 /* view2.swift */,
+			);
+			path = stackoverflow;
+			sourceTree = "<group>";
+		};
+		A8EC39D32845FDEF00D77895 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8EC39D42845FE0B00D77895 /* CustomColors.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +239,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8131DC728450B7000AA1173 /* TabManager.swift in Sources */,
+				A8131DD228451B7500AA1173 /* ShareRecipe.swift in Sources */,
+				A883960028478481009FAC06 /* view1.swift in Sources */,
+				A8EC39D52845FE0B00D77895 /* CustomColors.swift in Sources */,
+				A8131DD628451CE400AA1173 /* RootOnBoarding.swift in Sources */,
+				A8131DD428451BA700AA1173 /* DiscoverRecipe.swift in Sources */,
+				A8131DCE28451A7E00AA1173 /* HomeView.swift in Sources */,
 				A8131DC928450B8900AA1173 /* SheetManager.swift in Sources */,
+				A88395FE2847846D009FAC06 /* vm.swift in Sources */,
+				A8131DDB28451E8900AA1173 /* LoginView.swift in Sources */,
 				A8131DB62845085700AA1173 /* RootApp.swift in Sources */,
+				A8131DDD28451EEF00AA1173 /* RegisterView.swift in Sources */,
 				A8131DB42845085700AA1173 /* RecipeReminderApp.swift in Sources */,
 				A8131DC528450B5600AA1173 /* LaunchScreenManager.swift in Sources */,
+				A8131DD028451B3600AA1173 /* RememberRecipe.swift in Sources */,
+				A8839602284784A3009FAC06 /* view2.swift in Sources */,
 				A8131DC328450B0C00AA1173 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
