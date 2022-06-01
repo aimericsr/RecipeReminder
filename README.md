@@ -4,10 +4,10 @@
 
 ### Tools used for developing this app:
 
-Xcode : IDE
-[Xcodes](https://github.com/RobotsAndPencils/XcodesApp) : manage multiple xcodes version 
-[Bakery](https://apps.apple.com/gb/app/bakery-simple-icon-creator/id1575220747?mt=12) : generate differente size of app icon 
-[Postman](https://www.postman.com/) : API calls 
-[Quicktype](https://quicktype.io/) : create swift struct from json 
+Xcode : IDE <br/>
+[Xcodes](https://github.com/RobotsAndPencils/XcodesApp) : manage multiple xcodes version <br/>
+[Bakery](https://apps.apple.com/gb/app/bakery-simple-icon-creator/id1575220747?mt=12) : generate differente size of app icon <br/>
+[Postman](https://www.postman.com/) : API calls <br/>
+[Quicktype](https://quicktype.io/) : create swift struct from json <br/>
 
 Still under development
